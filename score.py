@@ -6,7 +6,7 @@ from azureml.core.model import Model
 
 def init():
     global model
-    model_path = Model.get_model_path('model')
+    model_path = Model.get_model_path('ankhokha-model')
     model = joblib.load(model_path)
 
 def run(raw_data):
